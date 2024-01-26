@@ -8,6 +8,11 @@ on:
     - cron: '28 8-20/4 * * 3-0'
   release:
     types: [published]
+  push:
+    tags:
+      - 'v*'
+    branches: 
+      - main
   watch:
     types: [started]
 
